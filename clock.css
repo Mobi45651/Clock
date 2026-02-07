@@ -1,0 +1,63 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+#main {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    font-size: 9rem;
+    
+}
+@media (max-width:800px){
+    body{
+        transform: scale(80%);
+    }
+    
+}
+@media (max-width:600px){
+    body{
+        transform: scale(60%);
+    }
+    
+}
+@media(max-width:400px){
+    body{
+        transform: scale(40%);
+    }
+}
+
+
+
+.clock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12rem;
+    height: 20rem;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 5%;
+    box-shadow: 0.9375rem 0.9375rem 3.125rem white;
+    transition: transform 0.2s ease-in-out;
+    box-sizing: border-box;
+}
+
+.clock>h2{
+    text-shadow: 0.0625rem 0.0625rem 6.25rem white;
+}
