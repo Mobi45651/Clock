@@ -27,6 +27,8 @@ setInterval(() => {
         hrs.style.transform = `rotateX(${angleH}deg)`;
         
     }
+
+    //For 12 hour clock
     let hour12 = hour24 % 12;
     document.getElementById("hourstext").innerHTML = String(hour12).padStart(2, '0');
 }, 1000);
